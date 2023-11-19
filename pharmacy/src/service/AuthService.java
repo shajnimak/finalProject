@@ -2,7 +2,6 @@ package service;
 
 import dbConnection.DBConnection;
 import pojo.entity.User;
-import pojo.enums.Status;
 import util.impl.CryptoConverter;
 
 public class AuthService {

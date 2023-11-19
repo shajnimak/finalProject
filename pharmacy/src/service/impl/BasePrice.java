@@ -10,11 +10,6 @@ public class BasePrice implements Price {
     }
 
     @Override
-    public String getText() {
-        return "Основаная цена";
-    }
-
-    @Override
     public double getPrice() {
         return price;
     }

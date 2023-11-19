@@ -1,15 +1,11 @@
-import com.sun.source.tree.IfTree;
 import pojo.entity.User;
 import pojo.enums.Status;
 import service.AuthService;
 import service.Interface;
-import service.MedicineFactory;
 import service.impl.AdminInterface;
-import service.impl.HeadacheMedicineFactory;
 import service.impl.UserInterface;
 
 import java.util.Scanner;
-import java.util.SortedMap;
 
 public class Main {
     public static void main(String[] args) {

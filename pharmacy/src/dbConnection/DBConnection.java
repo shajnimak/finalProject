@@ -28,19 +28,6 @@ public class DBConnection {
         }
         return dbConnection;
     }
-
-    public Long getLastId() {
-        String script = "SELECT id FROM users ORDER BY id DESC LIMIT 1;";
-        long id;
-        try {
-            PreparedStatement preparedStatement = connection.prepareStatement(script);
-            ResultSet resultSet = preparedStatement.executeQuery();
-            id = resultSet.getLong("id");
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        return id;
-    }
     public void insertUser(User user) {
         try {
             PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO users (id, username, status, password) VALUES (?, ?, ?, ?)");
@@ -54,7 +41,7 @@ public class DBConnection {
         }
     }
     public User selectUser(String inputUsername) {
-//
+
         try {
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * from users where username = ? limit 1");
             preparedStatement.setString(1, inputUsername);

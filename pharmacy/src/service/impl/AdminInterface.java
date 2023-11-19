@@ -5,7 +5,6 @@ import pojo.enums.Status;
 import service.AuthService;
 import service.Interface;
 import service.ObserveService;
-import service.Observer;
 
 import java.util.ArrayList;
 import java.util.List;

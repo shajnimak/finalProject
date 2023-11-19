@@ -1,6 +1,5 @@
 package pojo.entity;
 
-import java.util.Scanner;
 
 public class StomachMedicine extends Drug {
     @Override

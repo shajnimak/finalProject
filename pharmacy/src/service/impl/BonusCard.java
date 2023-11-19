@@ -10,11 +10,6 @@ public class BonusCard implements Price {
     }
 
     @Override
-    public String getText() {
-        return "Оснавная цена - бонусная скидка";
-    }
-
-    @Override
     public double getPrice() {
         return price.getPrice() - 60;
     }
